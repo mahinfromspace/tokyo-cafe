@@ -62,7 +62,7 @@ nav{
     border: 1px solid white;
     background: transparent;
     color: white;
-    transition: all 1s ease;
+    transition: all 0.4s ease;
     border-radius: 5px;
     
     
@@ -103,3 +103,86 @@ nav{
         
     }
 } 
+
+/* ------------Menu--------- */
+.menu{
+    min-height: 100vh;
+    /* background-image: linear-gradient(#000000a8, #1a1818b8), url(images/cafe-bg-2.jpg); */
+    background: linear-gradient(to bottom, #dfcdbf, #CFAF91, #7B5E57);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    background-repeat: no-repeat;
+}
+.menu h1{
+    padding-top:1rem;
+    color:black
+}
+.card-wrapper{
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+
+}
+.item-card{
+    background: linear-gradient(135deg, #F5E0C3, #CFAF91, #7B5E57);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:80%;
+    margin:3rem 0;
+    border-radius: 17px;
+    padding:20px;
+    backdrop-filter: blur(10px);
+    transition: 0.5s all ease;
+}
+.item-card:hover{
+    box-shadow: 2px 2px 20px 10px #0000008a;
+}
+.item-picture{
+    width:60%;
+    align-self: center;
+    margin-top: 2rem;
+    border-radius: 15px;
+}
+.item-name{
+    font-size: 20px;
+    padding:10px
+}
+.price{
+    border: 2px solid #ffffff;
+    padding:5px;
+    border-radius: 10px;
+}
+.detail{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:0.5rem;
+    text-align: center ;
+    background-color: transparent;
+    margin:0.5rem;
+    
+    
+}
+.item-details{
+    border:1px solid black;
+    margin: 1rem 0;
+    border-radius: 12px;
+}
+.component{
+    background-color: transparent;
+}
+.value{
+    background-color: 
+}
+.order-btn{
+    padding: 3px 25px;
+    font-size: 0.9em;
+    background-color: transparent;
+    border:2px;
+    border-style: solid;
+    
+
+    border-image:  linear-gradient(to right, black, grey)1
+}
