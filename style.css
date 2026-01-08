@@ -137,6 +137,7 @@ nav {
     background-color: transparent;
     display: flex;
     justify-content: center;
+    z-index: 1;
 
 }
 
@@ -333,6 +334,7 @@ nav {
 
 }
 
+
 @keyframes text-load {
 
     0% {
@@ -342,4 +344,62 @@ nav {
     100% {
         opacity: 1;
     }
+}
+
+
+
+.order-screen {
+    width: 100%;
+    min-height: 40rem;
+    background-color: #ffff;
+
+}
+
+
+
+.order-screen-inner {
+    color: black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.order-form {
+    gap: 1rem
+}
+
+.form-item {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem
+}
+
+.form-item span {
+    width: 6rem
+}
+
+.form-btn-wrap {
+    display: flex;
+    justify-content: center;
+}
+
+#order-screen {}
+
+.toggleScreen {
+    display: none !important;
+}
+
+.order-screen-toggle {
+    z-index: 2;
+}
+
+.menu-stage {
+    display: grid;
+}
+
+.menu-stage>* {
+    grid-area: 1 / 1;
 }
