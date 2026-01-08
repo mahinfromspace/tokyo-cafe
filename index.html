@@ -185,10 +185,10 @@
               <div class="form-item"><span>First Name: </span><input type="text" id="first-name"></div>
               <div class="form-item"><span>Last Name: </span><input type="text"></div>
               <div class="form-item"><span>Date of birth: </span><input type="date"></div>
-              <div class="form-item"><span>Address: </span><input type="text"></div>
+              <div class="form-item"><span>Address: </span><input type="text" id="inputAddress"></div>
               <div class="form-btn-wrap"><input type="submit" class="submitbtn" value="Submit"
                   onclick="orderFinish(event)"></div>
-              <button onclick="confirmation(event)">Click for no reason</button>
+
             </form>
           </div>
         </div>
@@ -196,15 +196,16 @@
           class="toggleScreen row mx-0 d-flex justify-content-center flex-column align-items-center order-screen"
           style="z-index: 3;">
 
-          <div class="col-12 col-md-4 px-0 order-screen-inner d-flex flex-column  gap-4">
-            <h4 style="color:black; text-align: center;">Order here</h4>
-            <form action="" class="order-form d-flex flex-column">
-              <h1>Thank you <span id="user-name"></span>
-              </h1>
-              <div class="form-btn-wrap"><input type="submit" class="submitbtn" value="Close"
-                  onclick="confirmation(event)"></div>
+          <div class="col-12 col-md-6 px-0 order-screen-inner d-flex flex-column  gap-4">
 
-            </form>
+
+            <h1>Thank you <span id="user-name"></span> for your order.
+            </h1>
+            <h4>Your order will be shipped to <span id="address"></span></h4>
+            <div class="form-btn-wrap"><input type="submit" class="submitbtn btn btn-danger" value="Close"
+                onclick="confirmation(event)"></div>
+
+
           </div>
         </div>
       </div>
@@ -264,6 +265,8 @@
 
       var firstName = document.getElementById("first-name").value;
       document.getElementById("user-name").innerHTML = firstName;
+      var address = document.getElementById("inputAddress").value;
+      document.getElementById("address").innerHTML = address;
     }
     function confirmation(event) {
       event.preventDefault();
