@@ -2,6 +2,12 @@ body {
     margin: 0;
 }
 
+html,
+body {
+    overflow-x: hidden;
+}
+
+
 a {
     text-decoration: none;
     color: inherit
@@ -350,9 +356,11 @@ nav {
 
 .order-screen {
     width: 100%;
-    min-height: 40rem;
+    min-height: 100%;
     background-color: #ffff;
-
+    position: absolute;
+    top: 0;
+    /* z-index: 7; */
 }
 
 
@@ -394,12 +402,4 @@ nav {
 
 .order-screen-toggle {
     z-index: 2;
-}
-
-.menu-stage {
-    display: grid;
-}
-
-.menu-stage>* {
-    grid-area: 1 / 1;
 }
